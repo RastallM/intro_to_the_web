@@ -25,7 +25,7 @@ set :session_secret, 'super secret'
   end
 
   get '/cat' do
-    "<div style='border: dashed red;'><img src='http://bit.ly/1eze8aE'></div>"
+    erb(:index)
   end
 
 # run Sinatra::Application.run!
