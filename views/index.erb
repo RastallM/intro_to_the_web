@@ -1,4 +1,16 @@
 <div>
+  <% if @name %>
   <h1>My name is <%= @name %></h1>
+  <% end %>
+
+  <% if !@name %>
+    <form action="/named-cat">
+      <input type="text" name="name">
+      <input type="submit" value="Submit">
+    </form>
+  <% end %>
+</div>
+<div>
   <img src='http://bit.ly/1eze8aE' style='border: 3px dashed red'>
 </div>
+  
